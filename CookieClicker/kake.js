@@ -21,9 +21,9 @@ function tidtaking() {
     }
 }
 
-// function startSpill() {
-//     const timer = setTimeout(stopp, 3000);
-// }
+function startSpill() {
+    const timer = setTimeout(stopp, 3000);
+}
 
 // Koden som kjører når man klikker på kakebildet
 function klikk() {
@@ -115,9 +115,9 @@ function restart() {
     }
 }
 
-// function startSpill() {
-//     const timer = setTimeout(stopp, 3000);
-// }
+function startSpill() {
+    const timer = setTimeout(stopp, 3000);
+}
 
 function stopp() {
     

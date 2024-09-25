@@ -1,0 +1,40 @@
+html, body {
+    background-color: white;
+    height: 100%;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+#kakeBilde {
+    height: auto;
+    width: auto;
+    margin: 30px;
+    max-width: 480px;
+    max-height: 309px;
+}
+
+
+/* h1 {
+    align-items: top;
+} */
+
+
+/*  
+img {
+    height: auto;
+    width: auto;
+    max-width: 960px;
+    max-height: 617px;
+}*/

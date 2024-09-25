@@ -1,0 +1,49 @@
+body {
+    /* Nullstillingsinnstillinger som jeg kaller det :P */
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    /* Bakgrunn på nettsiden */
+    background-image: url("/Homepage/pics/background.png"); /* SKAL ERSTATTES MED SØMLØST BILDE */
+    background-repeat: repeat;
+
+
+    /* Flexbox */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(166, 166, 167);
+    color: black;
+}
+
+h1 {
+    text-size-adjust: 50%;
+    margin: 5px;
+    text-decoration: underline;
+}
+
+.innlegg {
+    background-color: white;
+    color: black; /* Farge på teksten i innlegget */
+    padding: 20px; /* Avstand fra boksen rundt */
+    border: 3px solid black; /* Kantlinjer */
+    width: 50%;
+    margin-top: 5px;
+}
+
+.innleggThumbnail { /* Setter størrelse på bildene i div taggen */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    height: 100px;
+    width: 100px;
+    margin-right:5px;
+    float: left;
+}
+
+.innleggThumbnail:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}

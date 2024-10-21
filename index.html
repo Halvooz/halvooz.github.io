@@ -1,29 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halvards Homepage</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="icon" href="BilderNettverk/kaffekopp.jpg">
+    <title>Min Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="code.js" defer></script>
 </head>
-    <body>
-        <!-- Navbar (Menyen på venstre side) -->
-        <div class="sidenav">
-            <a class="active" href="ommeg.html"><img class="menysymbol" src="symboler/about.png"></img>Om meg...</a>
-            <a href="Bildegalleri/index.html">Bildegalleri</a>
-            <a href="prosjekter.html">Prosjekter</a>
-        </div>
-  
-        <!-- Sidens innhold -->
-        <div class="main">
-            
-        </div>        
+<body>
+    <header>
+        <button id="toggleSidebar">Toggle Sidebar</button>
+        <h1>Min Portfolio</h1>
+    </header>
 
+    <!-- SIDEBAR! -->
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#om-meg">Om Meg</a></li>
+                <li><a href="#prosjekter">Prosjekter</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
 
-
-
-    </body>
+        <!-- MAIN! -->
+        <main>
+            <section id="om-meg">
+                <h2>Om Meg</h2>
+                <p>Her kan du skrive litt om deg selv.</p>
+            </section>
+            <section id="prosjekter">
+                <h2>Prosjekter</h2>
+                <p>Her vil prosjektene dine bli vist.</p>
+            </section>
+            <section id="kontakt">
+                <h2>Kontakt</h2>
+                <p>Kontaktinformasjon og sosiale medier lenker.</p>
+            </section>
+        </main>
+    </div>
+</body>
 </html>
-

@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 8%;
+    background-color: lightgray;
+    color: black;
+    height: 100vh;
+    padding: 2px;
+    transition: width 0.3s, padding 0.3s;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li a {
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background-color: aqua;
+}
+
+.sidebar.collapsed {
+    width: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.container.collapsed .sidebar {
+    width: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#toggleSidebar {
+    float: left;
+}

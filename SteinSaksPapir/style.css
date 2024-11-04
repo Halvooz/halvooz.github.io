@@ -1,0 +1,23 @@
+#steinBilde {
+    margin: 1rem;
+}
+
+#papirBilde {
+    margin: 1rem;
+}
+
+#saksBilde {
+    margin: 1rem;
+}
+
+#steinBilde:hover {
+    transform: scale(1.2);
+}
+
+#papirBilde:hover {
+    transform: scale(1.2);
+}
+
+#saksBilde:hover {
+    transform: scale(1.2);
+}

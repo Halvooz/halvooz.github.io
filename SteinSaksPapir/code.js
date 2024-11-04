@@ -1,4 +1,4 @@
-// Oppretter en liste over valgene spilleren kan ta
+// Oppretter en liste over valgene man kan ta
 const valg = ["stein", "saks", "papir"];
 
 // Holde styr på poengsum
@@ -36,15 +36,17 @@ function velgStein() {
     console.log("Maskinen har valgt:" + maskinValg);
     if (maskinValg == "stein") {
         antallUavgjort++;
+        document.getElementById("uavgjort").innerText = "Antall uavgjort: " + antallUavgjort;
         document.getElementById("utskrift").innerText = "Maskinen valgte også stein, uavgjort!"
     }
     if (maskinValg == "papir") {
         antallTap++;
+        document.getElementById("tap").innerText = "Antall tap: " + antallTap;
         document.getElementById("utskrift").innerText = "Maskinen valgte papir, du tapte!"
     }
     if (maskinValg == "saks") {
-        utskriftTekst = "Maskinen valgte saks, du vant!"
         antallSeire++;
+        document.getElementById("seire").innerText = "Antall seire: " + antallSeire;
         document.getElementById("utskrift").innerText = "Maskinen valgte saks, du vant!"
     }
 }
@@ -54,16 +56,19 @@ function velgPapir() {
     let maskinValg = randomValg();
     console.log("Maskinen har valgt:" + maskinValg);
     if (maskinValg == "stein") {
-        utskriftTekst = "Maskinen valgte stein, du vant!";
         antallSeire++;
+        document.getElementById("seire").innerText = "Antall seire: " + antallSeire;
+        document.getElementById("utskrift").innerText = "Maskinen valgte stein, du vant!"
     }
     if (maskinValg == "papir") {
-        utskriftTekst = "Maskinen valgte også papir, uavgjort!";
         antallUavgjort++;
+        document.getElementById("uavgjort").innerText = "Antall uavgjort: " + antallUavgjort;
+        document.getElementById("utskrift").innerText = "Maskinen valgte papir, uavgjort!"
     }
     if (maskinValg == "saks") {
-        utskriftTekst = "Maskinen valgte saks, du tapte!"
         antallTap++;
+        document.getElementById("tap").innerText = "Antall tap: " + antallTap;
+        document.getElementById("utskrift").innerText = "Maskinen valgte saks, du tapte!"
     }
 }
 
@@ -72,16 +77,19 @@ function velgSaks() {
     let maskinValg = randomValg();
     console.log("Maskinen har valgt:" + maskinValg);
     if (maskinValg == "stein") {
-        utskriftTekst = "Maskinen valgte stein, du tapte!";
         antallTap++;
+        document.getElementById("tap").innerText = "Antall tap: " + antallTap;
+        document.getElementById("utskrift").innerText = "Maskinen valgte stein, du tapte!"
     }
     if (maskinValg == "papir") {
-        utskriftTekst = "Maskinen valgte papir, du vant!";
         antallSeire++;
+        document.getElementById("seire").innerText = "Antall seire: " + antallSeire;
+        document.getElementById("utskrift").innerText = "Maskinen valgte papir, du vant!"
     }
     if (maskinValg == "saks") {
-        utskriftTekst = "Maskinen valgte også saks, uavgjort!"
         antallUavgjort++;
+        document.getElementById("uavgjort").innerText = "Antall uavgjort: " + antallUavgjort;
+        document.getElementById("utskrift").innerText = "Maskinen valgte stein, uavgjort!"
     }
 }
 

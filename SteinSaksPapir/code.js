@@ -1,6 +1,11 @@
 // Oppretter en liste over valgene spilleren kan ta
 const valg = ["stein", "saks", "papir"];
 
+// Holde styr på poengsum
+let antallSeire = 0;
+let antallUavgjort = 0;
+let antallTap = 0;
+
 // //Spør spilleren hvor mange runder som skal spilles
 // let antallRunder = prompt("HVOR MANGE RUNDER VIL DU SPILLE!??!?!")
 
@@ -29,6 +34,54 @@ function velgStein() {
     console.log("Du har valgt Stein");
     let maskinValg = randomValg();
     console.log("Maskinen har valgt:" + maskinValg);
+    if (maskinValg == "stein") {
+        antallUavgjort++;
+        document.getElementById("utskrift").innerText = "Maskinen valgte også stein, uavgjort!"
+    }
+    if (maskinValg == "papir") {
+        antallTap++;
+        document.getElementById("utskrift").innerText = "Maskinen valgte papir, du tapte!"
+    }
+    if (maskinValg == "saks") {
+        utskriftTekst = "Maskinen valgte saks, du vant!"
+        antallSeire++;
+    }
+}
+
+function velgPapir() {
+    console.log("Du har valgt papir");
+    let maskinValg = randomValg();
+    console.log("Maskinen har valgt:" + maskinValg);
+    if (maskinValg == "stein") {
+        utskriftTekst = "Maskinen valgte stein, du vant!";
+        antallSeire++;
+    }
+    if (maskinValg == "papir") {
+        utskriftTekst = "Maskinen valgte også papir, uavgjort!";
+        antallUavgjort++;
+    }
+    if (maskinValg == "saks") {
+        utskriftTekst = "Maskinen valgte saks, du tapte!"
+        antallTap++;
+    }
+}
+
+function velgSaks() {
+    console.log("Du har valgt saks");
+    let maskinValg = randomValg();
+    console.log("Maskinen har valgt:" + maskinValg);
+    if (maskinValg == "stein") {
+        utskriftTekst = "Maskinen valgte stein, du tapte!";
+        antallTap++;
+    }
+    if (maskinValg == "papir") {
+        utskriftTekst = "Maskinen valgte papir, du vant!";
+        antallSeire++;
+    }
+    if (maskinValg == "saks") {
+        utskriftTekst = "Maskinen valgte også saks, uavgjort!"
+        antallUavgjort++;
+    }
 }
 
 function randomValg() {

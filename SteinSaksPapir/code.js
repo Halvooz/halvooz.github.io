@@ -45,6 +45,7 @@ function velgStein() {
     if (maskinValg == "saks") {
         utskriftTekst = "Maskinen valgte saks, du vant!"
         antallSeire++;
+        document.getElementById("utskrift").innerText = "Maskinen valgte saks, du vant!"
     }
 }
 

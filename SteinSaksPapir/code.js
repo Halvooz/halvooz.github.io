@@ -31,6 +31,13 @@ img_papir.addEventListener("click", velgPapir);
 
 // Hva som skal skje når man klikker på Stein bildet
 function velgStein() {
+
+    // const newButton = document.createElement('button');
+    // newButton.textContent = 'Click me!';
+    // document.body.appendChild(newButton);
+    
+
+
     console.log("Du har valgt Stein");
     let maskinValg = randomValg();
     console.log("Maskinen har valgt:" + maskinValg);

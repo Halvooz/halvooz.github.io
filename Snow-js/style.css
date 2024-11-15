@@ -1,0 +1,17 @@
+body {
+    height: 100vh;
+    background: url(AS.png) no-repeat ;
+    background-size: cover;
+    /* background: radial-gradient(ellipse at center, #0a0025 0%, #000000 100%); */
+    overflow: hidden;
+    filter: drop-shadow(0 0 10px white);
+    z-index: -1; 
+}
+
+.snow {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+}

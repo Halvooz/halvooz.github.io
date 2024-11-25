@@ -31,13 +31,6 @@ img_papir.addEventListener("click", velgPapir);
 
 // Hva som skal skje når man klikker på Stein bildet
 function velgStein() {
-
-    // const newButton = document.createElement('button');
-    // newButton.textContent = 'Click me!';
-    // document.body.appendChild(newButton);
-    
-
-
     console.log("Du har valgt Stein");
     let maskinValg = randomValg();
     console.log("Maskinen har valgt:" + maskinValg);
@@ -58,6 +51,7 @@ function velgStein() {
     }
 }
 
+// Hva som skal skje når man klikker på Papir bildet
 function velgPapir() {
     console.log("Du har valgt papir");
     let maskinValg = randomValg();
@@ -79,6 +73,7 @@ function velgPapir() {
     }
 }
 
+// Hva som skal skje når man klikker på saks bildet
 function velgSaks() {
     console.log("Du har valgt saks");
     let maskinValg = randomValg();
@@ -100,6 +95,7 @@ function velgSaks() {
     }
 }
 
+// Funksjon som velger stein, saks eller papir for "maskinen"
 function randomValg() {
     return valg[Math.floor(Math.random() * valg.length)];
 }

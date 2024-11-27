@@ -28,7 +28,6 @@ img_stein.addEventListener("click", velgStein);
 img_saks.addEventListener("click", velgSaks);
 img_papir.addEventListener("click", velgPapir);
 
-
 // Hva som skal skje når man klikker på Stein bildet
 function velgStein() {
     console.log("Du har valgt Stein");

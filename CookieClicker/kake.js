@@ -4,7 +4,7 @@ const audio2 = new Audio("munch.wav");
 // Legger til lyttefunksjoner på bilde og knapp (knapp for å restarte)
 document.getElementById("kakeBilde").addEventListener("click", klikk);
 document.getElementById("knapp").addEventListener("click", restart);
-//document.getElementById("startKnapp").addEventListener("click", startSpill);
+document.getElementById("startKnapp").addEventListener("click", startSpill);
 
 // Lagrer en variabel som tar vare på poengsummen
 let numberOfClicks = 0;

@@ -1,5 +1,9 @@
-const canvas = document.querySelector('canvas');
+// "use strict";
+
+const canvas = document.querySelector('#tegnebrett');
 const c = canvas.getContext('2d');
+
+console.log(c);
 
 canvas.width = 1024;
 canvas.height = 576;
@@ -9,7 +13,7 @@ const backgroundLevel1 = new Sprite({
         x: 0,
         y: 0,
     },
-    ImageSrc: './img/backgroundLevel1.png'
+    imageSrc: './img/backgroundLevel1.png'
 });
 
 const player = new Player();
@@ -32,7 +36,11 @@ const keys = {
 function animate() {
     window.requestAnimationFrame(animate);
     //console.log('running'); 
-    backgroundLevel1.draw()
+    backgroundLevel1.draw();
+
+    collisionBlocks.forEach(collisionBlock => {
+        collisionBlock.draw();
+    })
 
     // For å unngå "kollisjon" mellom knappene a og d
     player.velocity.x = 0

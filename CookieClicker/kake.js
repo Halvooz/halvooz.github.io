@@ -2,17 +2,22 @@
 const audio2 = new Audio("munch.wav");
 
 // Legger til lyttefunksjoner på bilde og knapp (knapp for å restarte)
-document.getElementById("kakeBilde").addEventListener("click", klikk);
+document.getElementById("kakeBilde").addEventListener("click", startSpill);
+document.getElementById("knapp").addEventListener("mouseover", playAudio);
 document.getElementById("knapp").addEventListener("click", restart);
-document.getElementById("startKnapp").addEventListener("click", startSpill);
+//document.getElementById("startKnapp").addEventListener("click", startSpill);
 
 // Lagrer en variabel som tar vare på poengsummen
 let numberOfClicks = 0;
 // Lagrer en variabel som holder styr på om kakebildet er stort eller lite
 let stor = true;
 
-let tidIgjen = 5;
+let tidIgjen = 10;
 let tidsTimer = setInterval(tidtaking, 1000);
+
+function playAudio() {
+    audio2.play();
+}
 
 function tidtaking() {
     if (tidIgjen <= 0) {
@@ -22,7 +27,7 @@ function tidtaking() {
 }
 
 function startSpill() {
-    const timer = setTimeout(stopp, 3000);
+    const timer = setTimeout(tidtaking, 3000);
 }
 
 // Koden som kjører når man klikker på kakebildet

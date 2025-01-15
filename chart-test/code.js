@@ -2,6 +2,22 @@
 // Det første eksemeplet er eit såkalla bar chart, dette er ein type søylediagram
 // Sjå ein nærare forklaring her: https://www.chartjs.org/docs/latest/getting-started/ 
 
+// const knapp = document.getElementById("btnLever");
+// knapp.addEventListener("click", leverData());
+
+// function leverData() {
+//   let antallEplerMandag = document.getElementById("skjema").value;
+//   console.log(antallEplerMandag);
+// }
+
+const knapp = document.getElementById("btnLever");
+knapp.addEventListener("click", leverData());
+
+function leverData() {
+  resultat = document.getElementById("kuk1").value;
+  console.log(resultat);
+}
+
 const ctx = document.getElementById('myChart');
 
 new Chart(ctx, {
@@ -31,10 +47,10 @@ const ctx2 = document.getElementById('myChart2');
 new Chart(ctx2, {
     type: 'line',
     data: {
-      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      labels: ['Mandag', 'Tirsdag', 'Onsdag', 'Torsdag', 'Fredag', 'Lørdag', 'Søndag'],
       datasets: [{
-        label: '# of Votes',
-        data: [12, 19, 3, 5, 2, 3],
+        label: 'Antall kilo boss',
+        data: [12, 19, 3, 5, 2, 3, 16],
         borderWidth: 1
       }]
     },
